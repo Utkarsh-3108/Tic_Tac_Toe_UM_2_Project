@@ -37,7 +37,7 @@ Double-click ```file.html``` or use a live server:
 • Responsive Design: Media queries for mobile compatibility.
 
 ## 🔮 Future Improvements
-Score tracker inmplementaion for rounds.
+Score tracker implementaion for rounds.
 
 Integrate Firebase for leaderboards.
 
