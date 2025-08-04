@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(200deg, #052ed2, #9f5353, #258c50);
+    padding: 20px;
+}
+
+.game-container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #1196cb;
+    border-radius: 25px;
+    box-shadow: 0 15px 30px rgba(219, 120, 8, 0.5);
+    padding: 25px;
+    text-align: center;
+}
+
+h1 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.game-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+
+#status {
+    color: #680808;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#reset-btn {
+    background-color: #26F7D2;
+    color: #22252D;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#reset-btn:hover {
+    background-color: #1fd6bb;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.cell {
+    aspect-ratio: 1;
+    background-color: #2A2D37;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: white;
+}
+
+.cell:hover {
+    background-color: #333842;
+}
+
+.cell.x {
+    color: #FF9500;
+}
+
+.cell.o {
+    color: #e73707;
+}
+
+@media (max-width: 480px) {
+    .game-container {
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    .cell {
+        font-size: 3.5rem;
+    }
+}
